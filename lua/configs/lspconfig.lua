@@ -3,9 +3,9 @@ require("nvchad.configs.lspconfig").defaults()
 
 local lspconfig = require "lspconfig"
 
--- EXAMPLE
 local servers = { "html", "cssls" }
 local nvlsp = require "nvchad.configs.lspconfig"
+local servers = { "html", "cssls", "solargraph", "terraformls", "rubocop" }
 
 -- lsps with default config
 for _, lsp in ipairs(servers) do
@@ -16,9 +16,9 @@ for _, lsp in ipairs(servers) do
   }
 end
 
--- configuring single server, example: typescript
+-- typescript
 -- lspconfig.tsserver.setup {
---   on_attach = nvlsp.on_attach,
---   on_init = nvlsp.on_init,
---   capabilities = nvlsp.capabilities,
+--   on_attach = on_attach,
+--   on_init = on_init,
+--   capabilities = capabilities,
 -- }
