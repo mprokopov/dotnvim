@@ -43,10 +43,15 @@ return {
     lazy = false
   },
   {
-    "weizheheng/ror.nvim",
+    "mprokopov/ror.nvim",
     dependencies = {
       "rcarriga/nvim-notify",
       "stevearc/dressing.nvim"
+    },
+    keys = {
+      {"<leader>rt", "<cmd>RorTestRun<cr>", desc = "Run Test"},
+      {"<leader>rl", "<cmd>RorTestRun Line<cr>", desc = "Run Test for Current Line"},
+      {"<leader>rr", "<cmd>RorCommands<cr>", desc = "RoR Commands Pallete"},
     },
     opts = {},
     config = true,
