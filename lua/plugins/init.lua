@@ -39,9 +39,17 @@ return {
       "sindrets/diffview.nvim",        -- optional - Diff integration
       "nvim-telescope/telescope.nvim", -- optional
     },
-    config = function ()
-      require "configs.neogit"
-    end
-    -- config = true
+    config = true,
+    lazy = false
+  },
+  {
+    "weizheheng/ror.nvim",
+    dependencies = {
+      "rcarriga/nvim-notify",
+      "stevearc/dressing.nvim"
+    },
+    opts = {},
+    config = true,
+    ft = "ruby"
   }
 }
