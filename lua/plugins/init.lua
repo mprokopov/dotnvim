@@ -56,5 +56,10 @@ return {
     opts = {},
     config = true,
     ft = "ruby"
+  },
+  {
+    "kylechui/nvim-surround",
+    config = true,
+    event = "VeryLazy"
   }
 }
