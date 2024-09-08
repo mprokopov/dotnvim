@@ -18,7 +18,7 @@ return {
   	opts = {
   		ensure_installed = {
   			"lua-language-server", "stylua",
-  			"html-lsp", "css-lsp" , "prettier", "solargraph", "terraformls", "rubocop"
+  			"html-lsp", "css-lsp" , "prettier", "solargraph", "terraformls", "rubocop", "helm-ls"
   		},
   	},
   },
@@ -38,6 +38,9 @@ return {
       "nvim-lua/plenary.nvim",         -- required
       "sindrets/diffview.nvim",        -- optional - Diff integration
       "nvim-telescope/telescope.nvim", -- optional
+    },
+    keys = {
+      {"<leader>gs", "<cmd>Neogit<cr>", desc = "Neogit"}
     },
     config = true,
     lazy = false
@@ -61,5 +64,10 @@ return {
     "kylechui/nvim-surround",
     config = true,
     event = "VeryLazy"
+  },
+  {
+    'towolf/vim-helm',
+    config=true,
+    ft='helm'
   }
 }

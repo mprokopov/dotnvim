@@ -14,4 +14,4 @@ map("n", "<leader>si", "<cmd>Telescope lsp_document_symbols<cr>")
 
 -- map("n", "<leader>rc", ":lua require('ror.commands').list_commands()<cr>")
 -- map("n", "<leader>rt", "<cmd>RorTestRun<cr>")
-map("n", "<leader>gs", "<cmd>Neogit<cr>")
+-- map("n", "<leader>gs", "<cmd>Neogit<cr>")
