@@ -5,7 +5,7 @@ local lspconfig = require "lspconfig"
 
 -- local servers = { "html", "cssls" }
 local nvlsp = require "nvchad.configs.lspconfig"
-local servers = { "html", "cssls", "solargraph", "terraformls", "rubocop", "eslint", "ansiblels", "ansible-lint", "ts_ls", "helm_ls", "yamlls"}
+local servers = { "html", "cssls", "solargraph", "terraformls", "rubocop", "eslint", "ansiblels", "ts_ls", "helm_ls", "yamlls", "clojure_lsp"}
 
 -- lsps with default config
 for _, lsp in ipairs(servers) do

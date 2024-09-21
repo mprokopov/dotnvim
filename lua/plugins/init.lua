@@ -27,7 +27,7 @@ return {
   	"nvim-treesitter/nvim-treesitter",
   	opts = {
   		ensure_installed = {
-  			"vim", "lua", "vimdoc", "html", "css", "bash", "hcl"
+  			"vim", "lua", "vimdoc", "html", "css", "bash", "hcl", "fennel"
   		},
   	},
   },
@@ -40,10 +40,10 @@ return {
       "nvim-telescope/telescope.nvim", -- optional
     },
     keys = {
-      {"<leader>gs", "<cmd>Neogit<cr>", desc = "Neogit"}
+      {"<leader>gg", "<cmd>Neogit<cr>", desc = "Neogit"}
     },
     config = true,
-    lazy = false
+    -- lazy = false
   },
   {
     "mprokopov/ror.nvim",
@@ -69,5 +69,9 @@ return {
     'towolf/vim-helm',
     config=true,
     ft='helm'
+  },
+  {
+    "Olical/conjure",
+    ft={'clojure', 'fennel', 'python'}
   }
 }
