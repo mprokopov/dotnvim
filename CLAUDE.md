@@ -39,9 +39,12 @@ The configuration includes LSP servers for multiple languages/tools configured i
 - Kubernetes: helm_ls
 - YAML: yamlls
 - Clojure: clojure_lsp
+- Nushell: nushell
 - Web: html, cssls
 
-Treesitter parsers are configured in `lua/plugins/init.lua` for: vim, lua, vimdoc, html, css, bash, hcl, fennel.
+LSP configuration uses the modern `vim.lsp.config` API (Neovim 0.11+) instead of the deprecated `require('lspconfig')` framework. Servers are configured using `vim.lsp.config[server_name] = { ... }` and enabled with `vim.lsp.enable(server_name)`.
+
+Treesitter parsers are configured in `lua/plugins/init.lua` for: vim, lua, vimdoc, html, css, bash, hcl, fennel, nu (nushell).
 
 ### Custom Plugins
 

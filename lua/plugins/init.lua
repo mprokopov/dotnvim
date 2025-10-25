@@ -18,7 +18,7 @@ return {
   	opts = {
   		ensure_installed = {
   			"lua-language-server", "stylua",
-  			"html-lsp", "css-lsp" , "prettier", "solargraph", "terraformls", "rubocop", "helm-ls"
+  			"html-lsp", "css-lsp" , "prettier", "solargraph", "terraformls", "rubocop", "helm-ls", "nushell"
   		},
   	},
   },
@@ -27,7 +27,7 @@ return {
   	"nvim-treesitter/nvim-treesitter",
   	opts = {
   		ensure_installed = {
-  			"vim", "lua", "vimdoc", "html", "css", "bash", "hcl", "fennel"
+  			"vim", "lua", "vimdoc", "html", "css", "bash", "hcl", "fennel", "nu"
   		},
   	},
   },

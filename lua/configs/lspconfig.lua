@@ -2,7 +2,7 @@
 require("nvchad.configs.lspconfig").defaults()
 
 local nvlsp = require "nvchad.configs.lspconfig"
-local servers = { "html", "cssls", "solargraph", "terraformls", "rubocop", "eslint", "ansiblels", "ts_ls", "helm_ls", "yamlls", "clojure_lsp" }
+local servers = { "html", "cssls", "solargraph", "terraformls", "rubocop", "eslint", "ansiblels", "ts_ls", "helm_ls", "yamlls", "clojure_lsp", "nushell" }
 
 -- Configure and enable LSP servers using vim.lsp.config (Neovim 0.11+)
 for _, lsp in ipairs(servers) do
